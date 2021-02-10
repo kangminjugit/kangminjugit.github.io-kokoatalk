@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KokoaTalk</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="state-bar">
+        <div class="state-bar__wifi">
+            <span>No Service</span>
+            <img src="img/no-wifi.png" class="js-no-wifi"/>
+            <img src="img/wifi-30.png" class="js-wifi-30"/>
+            <img src="img/wifi-60.png" class="js-wifi-60"/>
+            <img src="img/wifi-full.png" class="js-wifi-full"/>
+        </div>
+        <div class="state-bar__clock js-state-bar__clock">
+            <span class='js-state-bar__clockTitle'>00:00</span> 
+        </div>
+        <div class="state-bar__battery">
+            <span>11%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-box">
+        <div class="welcome-box__title">
+            <span>Welcome to KokoaTalk</span>
+        </div>
+        <div class="welcome-box__description">
+            <p>If you have a KokoaTalk Account,</p>
+            <p>log in with your email or phone number.</p>
+        </div>
+    </header>
+    <form class="login-box">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <input type="submit" value="Sign Up"/>
+    </form>
+    <div class="link-find-account">
+        <a href="#">Find Kokoa Account or Password</a>
+    </div>
+    
+    <script src='src/clock.js'></script>
+    <script src="src/wifi.js"></script>
+    <script src="https://kit.fontawesome.com/f5a71a44da.js" crossorigin="anonymous"></script>
+</body>
+</html>

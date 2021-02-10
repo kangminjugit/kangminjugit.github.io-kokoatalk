@@ -1,0 +1,90 @@
+:root {
+  --medium-font-size: 25px;
+  --small-font-size: 15px;
+  --x-small-font-size: 13px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.state-bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--small-font-size);
+}
+.state-bar__wifi,
+.state-bar__clock,
+.state-bar__battery {
+  display: flex;
+  width: 33%;
+}
+.state-bar__wifi span {
+  margin: 3px;
+}
+.js-show-wifi-state {
+  display: block;
+}
+.state-bar__clock {
+  justify-content: center;
+}
+.state-bar__battery {
+  justify-content: flex-end;
+}
+.state-bar__battery i {
+  margin: 3px;
+}
+.welcome-box {
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.welcome-box__title {
+  display: flex;
+  justify-content: center;
+  font-size: var(--medium-font-size);
+  margin: 10px;
+}
+.welcome-box__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: var(--small-font-size);
+}
+.welcome-box__description p {
+  display: block;
+  margin: 3px;
+}
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login-box input[type="text"],
+.login-box input[type="password"],
+.login-box input[type="submit"] {
+  margin: 2px;
+  font-size: var(--small-font-size);
+}
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  border-color: transparent transparent gray transparent;
+  width: 250px;
+  height: 30px;
+}
+.login-box input[type="password"] {
+  margin-bottom: 10px;
+}
+.login-box input[type="submit"] {
+  border-color: transparent;
+  width: 250px;
+}
+.link-find-account {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.link-find-account a {
+  color: black;
+  font-size: 13px;
+}
