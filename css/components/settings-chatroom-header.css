@@ -1,0 +1,57 @@
+.settings-header,
+.chatroom-header {
+  position: relative;
+  padding: 40px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: var(--point-color);
+}
+.settings-header__title,
+.chatroom-header__title,
+.settings-header__icons,
+.chatroom-header__icons {
+  width: 33%;
+}
+.settings-header__title,
+.chatroom-header__title {
+  font-family: var(--title-font-family);
+  font-size: var(--regular-font-size);
+  font-weight: var(--medium-font-weight);
+
+  display: flex;
+  justify-content: center;
+}
+.settings-header__icons,
+.chatroom-header__icons {
+  display: flex;
+}
+.settings-header__icons:first-child i,
+.chatroom-header__icons:first-child i {
+  margin-left: 10px;
+}
+.settings-header__icons:last-child,
+.chatroom-header__icons:last-child {
+  justify-content: flex-end;
+}
+.settings-header__icons:last-child i,
+.chatroom-header__icons:last-child i {
+  margin-right: 10px;
+}
+.settings-header__icons i,
+.chatroom-header__icons i {
+  font-size: 1.2em;
+}
+.settings-header__icons a i,
+.chatroom-header__icons a i {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+.settings-header__icons a:hover > i,
+.chatroom-header__icons a:hover > i {
+  color: gray;
+}

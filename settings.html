@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="state-bar">
+        <div class="state-bar__wifi">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="state-bar__clock js-state-bar__clock">
+            <span class='js-state-bar__clockTitle'>00:00</span> 
+        </div>
+        <div class="state-bar__battery">
+            <span>11%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="settings-header">
+        <div class="settings-header__icons">
+            <a href="more.html" class="settings-header__icon"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <h1 class="settings-header__title">Settings</h1>
+        <div class="settings-header__icons">
+            <a href="#" class="settings-header__icon"><i class="fas fa-search"></i></a>
+        </div>
+    </header>
+        
+    <div class="scroll-part">
+        <section class="settings-wrapper">
+            <a href="#" class="settings-notices">
+                <i class="fas fa-bullhorn"></i> 
+                <span>Notices</span>
+            </a>
+            <a href="#" class="settings-lab">
+                <i class="fas fa-flask"></i>
+                <span>Kokoa Lab</span>
+            </a>
+            <a href="#" class="settings-version">
+                <div>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings-version__state">
+                    Latest Version
+                </div>
+            </a>
+        </section>
+        <section class="settings-wrapper">
+            <a href="#">
+                <i class="fas fa-lock"></i>
+                <span>Privacy</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-user"></i>
+                <span>Friends</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-comment"></i>
+                <span>Chat</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-sun"></i>
+                <span>Display</span>
+                <div class="settings-new-sign">N</div>
+            </a>
+            <a href="#" class="settings-themes">
+                <div class="settings-title">
+                    <i class="fas fa-brush"></i>
+                    <span>Themes</span>
+                    <div class="settings-new-sign">N</div>
+                </div>
+                <div class="settings-themes__state">
+                    Default themes
+                </div>
+            </a>
+            <a href="#">
+                <i class="fas fa-phone"></i>
+                <span>Call</span>
+            </a>
+        </section>
+    </div>
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+    <script src='src/clock.js'></script>
+    <script src="https://kit.fontawesome.com/f5a71a44da.js" crossorigin="anonymous"></script>    
+</body>
+</html>

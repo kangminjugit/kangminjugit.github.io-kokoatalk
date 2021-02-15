@@ -1,0 +1,248 @@
+.friends-wrap {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+
+  font-family: var(--text-font-family);
+}
+
+.info-me {
+  padding: 20px 20px;
+}
+.channel-list,
+.friends-list {
+  padding: 10px 20px;
+}
+.info-me,
+.channel-list,
+.friends-list {
+  font-family: var(--text-font-family);
+
+  width: 100%;
+
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+}
+
+.channel-list-a,
+.friends-list li,
+.info-me-a {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 5px;
+}
+.channel-list-a,
+.friends-list li {
+  padding: 5px;
+}
+.friends-list li {
+  border-radius: 10px;
+}
+.info-me__profile {
+  display: flex;
+  align-items: center;
+}
+.info-me__profile > div {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile__music {
+  padding: 5px 7px;
+
+  width: fit-content;
+  height: fit-content;
+
+  border: 2px solid green;
+  border-radius: 20px;
+
+  font-size: var(--x-small-font-size);
+  font-weight: var(--light-font-weight);
+  color: rgba(0, 0, 0, 0.5);
+
+  background: white;
+}
+.profile__music i {
+  padding: 2px;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.5);
+}
+.info-me__profile img {
+  width: 60px;
+  height: 60px;
+}
+.info-me__name,
+.friend__name,
+.channel-list__wrap h2 {
+  padding: 0px 15px;
+  font-weight: var(--regular-font-weight);
+  margin-bottom: 5px;
+}
+.info-me__text,
+.friend__text {
+  display: block;
+  padding: 0px 15px;
+  font-weight: var(--light-font-weight);
+  opacity: 0.5;
+}
+
+.friends-category {
+  font-size: var(--x-small-font-size);
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.friends-category span {
+  margin-right: 5px;
+}
+.channel-list > a,
+.friend-a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.channel-list__wrap,
+.friends-list__wrap {
+  display: flex;
+  align-items: center;
+}
+.channel-list__wrap .profile-img,
+.friends-list__wrap .profile-img {
+  width: 45px;
+  height: 45px;
+}
+
+.channel-list__wrap .profile-img {
+  background-color: var(--main-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img i {
+  font-size: 1.5em;
+}
+
+.channel-list__wrap:last-child i,
+.channel-list__wrap:last-child span {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.channel-list__wrap:last-child span {
+  margin-right: 5px;
+}
+.hover-color-change {
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+.hover-color-change:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 450px) {
+  .info-me__name,
+  .friend__name,
+  .channel-list__wrap h2,
+  .info-me__text,
+  .friend__text {
+    font-size: var(--small-font-size);
+  }
+  .profile__music i {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  .friends-scroll-part {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .friends-list ul {
+    display: flex;
+    flex-direction: row;
+
+    overflow-x: scroll;
+  }
+  .info-me {
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+
+    border-radius: 20px;
+  }
+  .info-me,
+  .friends-list ul li {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  }
+  .info-me-a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .channel-list li,
+  .friends-list ul li {
+    width: 200px;
+    height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .channel-list li a,
+  .friends-list li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px;
+  }
+
+  .info-me__profile,
+  .friends-list__wrap {
+    margin-bottom: 20px;
+  }
+}
+
+#blind-screen {
+  z-index: 99;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+
+  display: flex;
+  flex-direction: column;
+
+  animation: hideSplashScreen 2s ease-in-out forwards;
+
+  background-color: var(--main-color);
+}
+#blind-screen span {
+  font-family: var(--title-font-family);
+  font-size: var(--big-font-size);
+}
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

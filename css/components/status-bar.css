@@ -1,0 +1,38 @@
+.state-bar {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: var(--small-font-size);
+  font-weight: var(--regular-font-weight);
+  padding: 10px 3px;
+
+  width: 100%;
+
+  background-color: transparent;
+}
+.state-bar__wifi,
+.state-bar__clock,
+.state-bar__battery {
+  display: flex;
+  width: 33%;
+}
+.state-bar__wifi span {
+  margin: 3px;
+}
+.js-show-wifi-state {
+  display: block;
+}
+.state-bar__clock {
+  justify-content: center;
+}
+.state-bar__battery {
+  justify-content: flex-end;
+}
+.state-bar__battery i {
+  margin: 3px;
+}

@@ -1,0 +1,127 @@
+.nav {
+  background-color: white;
+
+  position: absolute;
+  bottom: 0;
+
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  height: 8vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav__btn {
+  text-align: center;
+}
+.nav__btn a i {
+  font-size: 1.2em;
+}
+.nav__link {
+  position: relative;
+}
+.nav__link__chat-num {
+  color: white;
+  background-color: var(--new-chat-color);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+
+  font-size: var(--x-small-font-size);
+  font-weight: var(--medium-font-weight);
+
+  animation: emphasize-new-chat 1s ease-in-out infinite;
+}
+.nav__btn a:hover {
+  font-size: 1.3em;
+}
+.nav__btn a:hover > .nav__link__chat-num {
+  bottom: 15px;
+  left: 17px;
+  width: 17px;
+  height: 17px;
+  font-size: var(--small-font-size);
+}
+
+.nav__link__new-more {
+  background-color: var(--new-chat-color);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+
+  animation: emphasize-new-setting 1s ease-in-out infinite;
+}
+.nav__btn a:hover > .nav__link__new-more {
+  bottom: 20px;
+  left: 25px;
+
+  width: 7px;
+  height: 7px;
+}
+
+@keyframes emphasize-new-setting {
+  0% {
+    bottom: 15px;
+  }
+  12% {
+    bottom: 17px;
+  }
+  25% {
+    bottom: 15px;
+  }
+  37% {
+    bottom: 17px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+@keyframes emphasize-new-chat {
+  0% {
+    bottom: 10px;
+  }
+  12% {
+    bottom: 15px;
+  }
+  25% {
+    bottom: 10px;
+  }
+  37% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+@keyframes show-nav-bar {
+  0% {
+  }
+}

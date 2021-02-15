@@ -1,90 +1,72 @@
-:root {
-  --medium-font-size: 25px;
-  --small-font-size: 15px;
-  --x-small-font-size: 13px;
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/*screens*/
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chat.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat-room.css";
+
+/*components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/header.css";
+@import "components/settings-chatroom-header.css";
+@import "components/chatroom-input.css";
+@import "components/no-mobile.css";
+* {
+  box-sizing: border-box;
+}
+html {
+  display: flex;
+  justify-content: center;
 }
 body {
-  font-family: "Roboto", sans-serif;
-}
-.state-bar {
-  display: flex;
-  justify-content: space-between;
-  font-size: var(--small-font-size);
-}
-.state-bar__wifi,
-.state-bar__clock,
-.state-bar__battery {
-  display: flex;
-  width: 33%;
-}
-.state-bar__wifi span {
-  margin: 3px;
-}
-.js-show-wifi-state {
-  display: block;
-}
-.state-bar__clock {
-  justify-content: center;
-}
-.state-bar__battery {
-  justify-content: flex-end;
-}
-.state-bar__battery i {
-  margin: 3px;
-}
-.welcome-box {
-  margin-top: 70px;
-  margin-bottom: 70px;
-}
-.welcome-box__title {
-  display: flex;
-  justify-content: center;
-  font-size: var(--medium-font-size);
-  margin: 10px;
-}
-.welcome-box__description {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+
+  position: relative;
+  min-width: 260px;
+  min-height: 500px;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: gray;
-  font-size: var(--small-font-size);
+
+  animation: opacity-change 0.5s ease-in-out;
 }
-.welcome-box__description p {
-  display: block;
-  margin: 3px;
+
+body::-webkit-scrollbar {
+  display: none;
 }
-.login-box {
+
+@keyframes opacity-change {
+  0% {
+    opacity: 0.7;
+    width: 99.3%;
+  }
+  100% {
+    opacity: 1;
+    width: 100%;
+  }
+}
+.scroll-part {
+  width: 100vw;
+  height: 80vh;
+  padding-bottom: 50px;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+
+  overflow-y: scroll;
 }
-.login-box input[type="text"],
-.login-box input[type="password"],
-.login-box input[type="submit"] {
-  margin: 2px;
-  font-size: var(--small-font-size);
-}
-.login-box input[type="text"],
-.login-box input[type="password"] {
-  border-color: transparent transparent gray transparent;
-  width: 250px;
-  height: 30px;
-}
-.login-box input[type="password"] {
-  margin-bottom: 10px;
-}
-.login-box input[type="submit"] {
-  border-color: transparent;
-  width: 250px;
-}
-.link-find-account {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.link-find-account a {
-  color: black;
-  font-size: 13px;
+.scroll-part::-webkit-scrollbar {
+  display: none;
 }

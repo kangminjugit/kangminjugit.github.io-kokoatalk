@@ -1,0 +1,140 @@
+.chatroom-chat-day {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px 10px;
+
+  font-family: var(--text-font-family);
+}
+.chatroom-chat-day__date {
+  width: fit-content;
+  font-weight: var(--medium-font-weight);
+  font-size: var(--x-small-font-size);
+
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.chat-me-talk,
+.chat-friend-talk {
+  width: 100%;
+  display: flex;
+
+  margin: 5px 0px;
+}
+.chat-friend-talk {
+  justify-content: flex-start;
+}
+.chat-friend-talk__profile-img {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 20px;
+
+  margin-right: 5px;
+}
+.chat-friend-talk__text {
+  display: flex;
+  flex-direction: column;
+}
+.chat-friend-talk__text span {
+  margin: 5px;
+
+  font-weight: 400;
+}
+.chat-friend-talk__text div {
+  display: flex;
+}
+.talk-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.talk {
+  display: flex;
+  align-content: center;
+}
+.chat-friend-talk .talk {
+  justify-content: flex-start;
+}
+.chat-me-talk .talk {
+  justify-content: flex-end;
+}
+.talk span {
+  width: fit-content;
+  height: fit-content;
+
+  margin: 5px;
+  padding: 5px 7px;
+
+  border-radius: 10px;
+}
+.chat-friend-talk .talk span {
+  border-top-left-radius: 0px;
+}
+.chat-me-talk .talk span {
+  border-top-right-radius: 0px;
+}
+.chat-friend-talk .talk span {
+  background-color: rgba(247, 224, 87, 0.7);
+}
+.chat-me-talk .talk span {
+  background-color: rgba(153, 154, 157, 0.7);
+}
+.talk button {
+  display: none;
+  background-color: rgba(0, 128, 0, 0.3);
+
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+}
+.chat-me-talk .talk button i {
+  transform: rotateY(180deg);
+}
+.talk-info-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5px;
+}
+.talk-info-wrapper div:first-child {
+  font-size: var(--small-font-size);
+  font-weight: var(--regular-font-weight);
+}
+.talk-info-wrapper div:last-child {
+  font-size: var(--x-small-font-size);
+  font-weight: var(--light-font-weight);
+}
+
+.chat-friend-talk .talk-info-wrapper div:first-child {
+  text-align: start;
+}
+.chat-me-talk .talk-info-wrapper div:first-child {
+  text-align: end;
+}
+.chat-me-talk {
+  justify-content: flex-end;
+}
+.talk:hover > button {
+  display: block;
+}
+.talk:hover > div {
+  display: none;
+}
+.talk:focus > button {
+  display: block;
+}
+.talk:focus > div {
+  display: none;
+}
+@media screen and (max-width: 260px) {
+  .chatroom-chat-day {
+    width: 100%;
+    padding: 5px 5px;
+
+    font-size: var(--small-font-size);
+  }
+}

@@ -1,0 +1,22 @@
+:root {
+  --x-large-font-size: 50px;
+  --big-font-size: 30px;
+  --medium-font-size: 25px;
+  --regular-font-size: 20px;
+  --small-font-size: 13px;
+  --x-small-font-size: 11px;
+
+  --chat-title-font-size: 15px;
+
+  --medium-font-weight: 500;
+  --regular-font-weight: 400;
+  --light-font-weight: 300;
+
+  --main-color: #999a9d;
+  --point-color: #f7e057;
+  --new-chat-color: rgb(19, 100, 19);
+  --active-color: #ff7ccd;
+
+  --title-font-family: "Abril Fatface", cursive;
+  --text-font-family: "Barlow Semi Condensed", sans-serif;
+}

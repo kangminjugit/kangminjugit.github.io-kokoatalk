@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="state-bar">
+        <div class="state-bar__wifi">
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="state-bar__clock js-state-bar__clock">
+            <span class='js-state-bar__clockTitle'>00:00</span> 
+        </div>
+        <div class="state-bar__battery">
+            <span>11%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>  
+    <header class="header">
+        <h1 class="header__title">
+            <div>Find</div>
+        </h1>
+        <div class="header__icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-cog"></i></a>
+        </div>
+    </header>
+    <div class="scroll-part">
+        <section class="utilities"> 
+            <a href="#">
+                <i class="fas fa-qrcode"></i>
+                <h2>QR Code</h2>
+            </a>
+            <a href="#">
+                <i class="far fa-address-book"></i>
+                <h2>Add by Contacts</h2>
+            </a>
+            <a href="#">
+                <i class="far fa-id-card"></i>
+                <h2>Add by ID</h2>
+            </a>
+            <a href="#">
+                <i class="far fa-envelope"></i>
+                <h2>Invite</h2>
+            </a>
+        </section>
+        <section class="recommended-friends">
+            <h2>Recommended Friends</h2>
+            <div>You have no recommended friends</div>
+        </section>
+        <section class="open-chat">
+            <div class="open-chat__header">
+                <h2>Open Chat</h2>
+                <a href="#">
+                    <h2>Go to OpenChat home</h2>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </div>
+            <ul class="open-chat__list">
+                <li class="open-chat__room">
+                    <a href="#">
+                        <div class="open-chat__room__info">
+                            <h1>#NCT</h1>
+                            <div class="open-chat__room__info__description">#NCT#NCTIZEN#FRIENDS</div>
+                            <div class="open-chat__room__info__state">
+                                <img src="img/open-chat-1-user.jpg"/>
+                                <div>
+                                    <span>802</span> 
+                                    <span>members</span>
+                                    <span> | </span>
+                                    <span>Active</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/open-chat-1.jpg"/>
+                    </a>
+                    
+                </li>
+                <li class="open-chat__room">
+                    <a href="#">
+                        <div class="open-chat__room__info">
+                            <h1>#NCT</h1>
+                            <div class="open-chat__room__info__description">#NCT#NCTIZEN#FRIENDS</div>
+                            <div class="open-chat__room__info__state">
+                                <img src="img/open-chat-1-user.jpg"/>
+                                <div>
+                                    <span>802</span> 
+                                    <span>members</span>
+                                    <span> | </span>
+                                    <span>Active</span>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/open-chat-1.jpg"/>
+                    </a>
+                    
+                </li>
+            </ul>
+        </section>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <div class="nav__link__chat-num">1</div>
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__link__new-more"></div>
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+    <script src='src/clock.js'></script>
+    <script src="https://kit.fontawesome.com/f5a71a44da.js" crossorigin="anonymous"></script>
+</body>
+</html>

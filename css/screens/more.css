@@ -1,0 +1,103 @@
+.more-me,
+.more-apps,
+.more-suggestions {
+  width: 100%;
+  font-family: var(--text-font-family);
+}
+.more-me {
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.more-me a {
+  display: flex;
+}
+.more-me a img {
+  width: 60px;
+  height: 60px;
+
+  margin-right: 20px;
+}
+.more-me a div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.more-me__name {
+  font-weight: var(--medium-font-weight);
+}
+.more-me__phone span {
+  font-size: var(--small-font-size);
+  color: rgba(0, 0, 0, 0.5);
+}
+.more-me__phone i {
+  color: var(--new-chat-color);
+}
+.more-me button {
+  background-color: transparent;
+  font-size: 1.2em;
+}
+.more-apps {
+  padding: 30px 20px;
+
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.05);
+}
+.more-apps ul,
+.more-suggestions ul {
+  width: 100%;
+}
+.more-apps ul li,
+.more-suggestions ul li {
+  width: 15%;
+  height: 15%;
+  margin: 10px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.more-apps ul li a,
+.more-suggestions ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.more-apps ul li a i,
+.more-suggestions ul li a i {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.more-apps ul li a span {
+  display: block;
+  text-align: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--light-font-weight);
+}
+.more-suggestions {
+  padding: 0px 20px;
+}
+.more-suggestions__title {
+  margin: 20px 0px;
+  font-size: var(--small-font-size);
+}
+.more-suggestions ul li a i {
+  background-color: var(--main-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+.more-suggestions ul li a span {
+  display: block;
+  text-align: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--regular-font-weight);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 350px) {
+  .more-apps ul li,
+  .more-suggestions ul li {
+    margin: 8px;
+  }
+}

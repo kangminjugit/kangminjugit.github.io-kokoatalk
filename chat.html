@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="state-bar">
+        <div class="state-bar__wifi">
+            <span>No Service</span>
+            <!-- <img src="img/no-wifi.png" class="js-no-wifi"/>
+            <img src="img/wifi-30.png" class="js-wifi-30"/>
+            <img src="img/wifi-60.png" class="js-wifi-60"/>
+            <img src="img/wifi-full.png" class="js-wifi-full"/> -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="state-bar__clock js-state-bar__clock">
+            <span class='js-state-bar__clockTitle'>00:00</span> 
+        </div>
+        <div class="state-bar__battery">
+            <span>11%</span>
+            <i class="fas fa-battery-full"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1 class="header__title">
+            <div>Chats</div>
+        </h1>
+        <div class="header__icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-plus"></i></a>
+            <a href="#"><i class="fas fa-music"></i></a>
+            <a href="#"><i class="fas fa-cog"></i></a>
+        </div>
+    </header>
+
+    <div class="scroll-part">
+        <section class="chat-list">
+            <ul>
+                <li>
+                    <a href="chat-room1.html">
+                        <div class="chat-list__wrap">
+                            <img src="img/effy.jpg" class="chat-profile-img"/>
+                            <div class="chat-list__text">
+                                <h2>Effy</h2>
+                                <div>iffy</div>
+                            </div>
+                        </div>
+                        <div class="chat-list__state">
+                            <div>21:22</div>
+                            <div>1</div>
+                        </div>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-list__wrap">
+                            <img src="img/jungwoo.jpg" class="chat-profile-img"/>
+                            <div class="chat-list__text">
+                                <h2>Jungwoo</h2>
+                                <div>Welcome to SMtown :)</div>
+                            </div>
+                        </div>
+                        <div class="chat-list__state">
+                            <div>21:22</div>
+                            <div>1</div>
+                        </div>
+                    </a>
+                    
+                </li>
+                
+            </ul>
+        </section>
+    </div>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn">
+                <a class="nav__link" href="friends.html">
+                    <i class="far fa-user fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="chat.html">
+                    <div class="nav__link__chat-num">1</div>
+                    <i class="far fa-comment fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="find.html">
+                    <i class="fas fa-search fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav__btn">
+                <a class="nav__link" href="more.html">
+                    <div class="nav__link__new-more"></div>
+                    <i class="fas fa-ellipsis-h fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div id="no-mobile">
+        <span>Your screen is too big</span>
+    </div>
+    <script src='src/clock.js'></script>
+    <script src="https://kit.fontawesome.com/f5a71a44da.js" crossorigin="anonymous"></script>
+</body>
+</html>
