@@ -72,27 +72,7 @@
   font-size: var(--x-small-font-size);
   color: black;
   transition: color 0.5s ease-in-out;
-
-  animation: message-change 5s ease-in-out infinite;
 }
 .chatroom-input input[type="text"]:focus::placeholder {
   color: transparent;
-}
-
-@keyframes message-change {
-  0% {
-    transform: rotateX(0deg);
-  }
-  25% {
-    transform: rotateX(20deg);
-  }
-  50% {
-    transform: rotateX(0deg);
-  }
-  75% {
-    transform: rotateX(-90deg);
-  }
-  100% {
-    transform: rotateX(-180deg);
-  }
 }

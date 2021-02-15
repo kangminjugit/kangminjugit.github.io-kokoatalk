@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
 .scroll-part {
   width: 100vw;
   height: 80vh;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   display: flex;
   flex-direction: column;
